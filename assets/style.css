@@ -63,4 +63,5 @@ h2{
 li{
     user-select: all;
     margin-bottom: 10px;
+    list-style: none;
 }
