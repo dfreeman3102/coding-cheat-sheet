@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 :root{
---primary-background-color:rgb(70, 140, 231);
---secondary-background-color:rgb(34, 54, 54);
 --primary-border:5px solid rgba(0, 0, 0, 0.336);
 --font:"Roboto"
 }
 
-*{
-    background-color: var(--primary-background-color);
+body{
+    background: linear-gradient(#aaafff, #fffaaa);
     font-family: var(--font), sans-serif, serif, cursive;
 }
 
@@ -24,10 +22,27 @@ nav{
 a{
     padding: 10px;
 }
-
-.card{
-    border: var(--primary-border);
+main{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px;
+}
+.card{
+    border: var(--primary-border);
+    width: 25%;
+    
+
+}
+h1:hover::after{
+    position: absolute;
+    background-color: rgb(77, 77, 77);
+    color: antiquewhite;
+    content: "Click list items below to copy";
     width: 250px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    border-radius: 50%;
+    font-size: 15px;
 }
