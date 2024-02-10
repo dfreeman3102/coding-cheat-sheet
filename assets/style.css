@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 :root{
 --primary-border:5px solid rgba(0, 0, 0, 0.336);
---font:"Roboto"
+--primary-background:linear-gradient(#ff0000, #0018f3);
+--secondary-background:linear-gradient(#0213ff, #ff000d);
+--font:"Roboto";
+--font-color:#fff;
 }
 
 body{
-    background: linear-gradient(#aaafff, #fffaaa);
+    background: var(--primary-background);
     font-family: var(--font), sans-serif, serif, cursive;
-    color: rgb(144, 92, 240);
+    color: var(--font-color);
 }
 
 h1{
@@ -40,6 +43,7 @@ nav{
 
 a{
     padding: 10px;
+    color: var(--font-color);
 }
 /* makes display flex */
 main{
@@ -68,4 +72,29 @@ li{
     margin: 10px;
     list-style: none;
     font-size: 25;
+}
+
+footer{
+    text-align: center;
+    margin:50px
+}
+/* different display size settings */
+/* tablet */
+@media screen and (max-width: 992px){
+    body{
+        background:var(--secondary-background);
+        font-family: var(--font), sans-serif, serif, cursive;
+        color: var(--font-color);
+    }
+}
+/* lrg phone */
+@media screen and (max-width: 768px){
+    body{
+        background: var(--primary-background);
+        font-family: var(--font), sans-serif, serif, cursive;
+        color: var(--font-color);
+    }
+    .card{
+        width:100%;
+    }
 }
