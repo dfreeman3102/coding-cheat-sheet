@@ -74,6 +74,11 @@ li{
     font-size: 25;
 }
 
+li:hover{
+    background-color: black;
+    width: fit-content;
+}
+
 footer{
     text-align: center;
     margin:50px
